@@ -1,0 +1,1 @@
+[![Greeting on variable day](https://github.com/ttteety/github-tutorial/actions/workflows/13-environment-variable.yml/badge.svg)](https://github.com/ttteety/github-tutorial/actions/workflows/13-environment-variable.yml)
