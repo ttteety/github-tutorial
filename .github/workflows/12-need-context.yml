@@ -12,7 +12,7 @@ jobs:
         run: echo "build_id=$RANDOM" >> $GITHUB_OUTPUT
   deploy:
     needs: build
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying build ${{ needs.build.outputs.build_id }}"
   debug:
