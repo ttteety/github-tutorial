@@ -4,6 +4,9 @@ on: push
 jobs:
   dump_context_to_log:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test-group: [1, 2]
     steps:
       - name: Dump GitHub context
         env:
