@@ -12,6 +12,6 @@ jobs:
     needs: job1
     runs-on: ubuntu-latest
     strategy:
-      matrix: ${{ fromJson(needs.jobs1.outputs.matrix )}}
+      matrix: ${{ fromJSON(needs.jobs1.outputs.matrix )}}
     steps:
       - run: echo "Matrix - Project ${{ matrix.project }}, Config ${{ matrix.config }}"
