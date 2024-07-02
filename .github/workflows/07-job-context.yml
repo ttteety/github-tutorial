@@ -12,6 +12,6 @@ jobs:
         ports:
           - 5432
 
-  steps:
-    - run: pg_isready -h localhost -p ${{ job.services.postgres.ports[5432] }}
-    - run: echo "Run tests against Postgres"
+    steps:
+      - run: pg_isready -h localhost -p ${{ job.services.postgres.ports[5432] }}
+      - run: echo "Run tests against Postgres"
