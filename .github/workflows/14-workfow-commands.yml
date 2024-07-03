@@ -11,3 +11,4 @@ jobs:
           echo "::group::My title"
           echo "Inside group"
           echo "::endgroup::"
+          echo "::add-mask::Mona The Octocat"
